@@ -30,16 +30,19 @@ for (const iterator of casillas) {
         toggleModal()
         return;
       }
+
       pos = parseInt(element.target.dataset.pos);
       
       if (toggleTurn) {
         element.target.innerHTML = 'X';
+        element.target.classList.add('player1')
         toggleTurn = !toggleTurn;
         game[pos] = player1;
         toggleTurnDisplay(toggleTurn)
       }
       else {
         element.target.innerHTML = 'O';
+        element.target.classList.add('player2')
         toggleTurn = !toggleTurn;
         game[pos] = player2;
         toggleTurnDisplay(toggleTurn)
@@ -65,9 +68,13 @@ function toggleTurnDisplay(turn) {
   let turnDisplay = document.getElementById('turn-toggle-display');
   if(turn) {
     turnDisplay.innerHTML = "X";
+    turnDisplay.classList.add('player1')
+    turnDisplay.classList.remove('player2');
   }
   else {
     turnDisplay.innerHTML = "O";
+    turnDisplay.classList.add('player2')
+    turnDisplay.classList.remove('player1');
   }
 }
 
@@ -88,6 +95,8 @@ btnReset.addEventListener('click', function () {
 function clean() {
   for (const iterator of casillas) {
     iterator.innerHTML = '';
+    iterator.classList.remove('player1')
+    iterator.classList.remove('player2');
   }
 }
 

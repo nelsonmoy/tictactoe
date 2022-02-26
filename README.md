@@ -1,4 +1,4 @@
 # The tic tac toe game
 
-It's tic tac toe game do on HTML, CSS, and Javascript.
+It's tic tac toe game make in HTML, CSS, and Javascript.
 

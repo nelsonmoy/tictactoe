@@ -1,0 +1,157 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 0px;
+    text-align: center;
+}
+
+.actions {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.actions > button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.casilla {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    cursor:pointer;
+    font-size: 60px;
+    line-height: 100px;
+}
+
+#casilla-uno {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border-right: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#casilla-dos {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#casilla-tres {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border-left: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#casilla-cuatro {
+    border-right: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#casilla-seis {
+    border-left: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#casilla-siete {
+    border-top: 3px solid rgba(0, 0, 0, 0.2);
+    border-right: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#casilla-ocho {
+    border-top: 3px solid rgba(0, 0, 0, 0.2); 
+}
+
+#casilla-nueve {
+    border-top: 3px solid rgba(0, 0, 0, 0.2);
+    border-left: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 40;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.is-active {
+    display: flex;
+}
+
+.modal-background {
+    background-color: rgba(10,10,10,.86);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-content {
+    text-align: center;
+    margin: 0 auto;
+    max-height: calc(100vh - 40px);
+    width: 320px;
+    position: relative;
+    overflow: auto;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 3px;
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+
+#winner {
+    font-weight: bolder;
+} 
+
+.turn-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.turn-display {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.turn-display p {
+    font-size: 30px;
+}
+
+.turn-display span {
+    font-weight: bolder;
+    text-transform: uppercase;
+}

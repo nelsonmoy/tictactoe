@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer=""></script>
+</head>
+<body>
+    <section class="turn-container">
+        <div class="turn-display">
+            <p>Turn: <span id="turn-toggle-display">X</span></p>
+        </div>
+    </section>
+    <section class="container">
+        <div class="casilla" id="casilla-uno" data-pos="0"></div>
+        <div class="casilla" id="casilla-dos" data-pos="1"></div>
+        <div class="casilla" id="casilla-tres" data-pos="2"></div>
+        <div class="casilla" id="casilla-cuatro" data-pos="3"></div>
+        <div class="casilla" id="casilla-cinco" data-pos="4"></div>
+        <div class="casilla" id="casilla-seis" data-pos="5"></div>
+        <div class="casilla" id="casilla-siete" data-pos="6"></div>
+        <div class="casilla" id="casilla-ocho" data-pos="7"></div>
+        <div class="casilla" id="casilla-nueve" data-pos="8"></div>
+    </section>
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h3>WINNER</h3>
+                <p>The winner is: <span id="winner">Nothing</span></p>
+                <section class="actions"><button id="btn-reset">RESET</button></section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
